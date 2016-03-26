@@ -247,6 +247,23 @@ public class ClassLoadFromBundle {
         }
     }
 
+    public static void checkBundle(String location) {
+        synchronized (location) {
+            if (sInternalBundles == null) {
+                resolveInternalBundles();
+            }
+            BundleInfoList.BundleInfo locationw = BundleInfoList.getInstance().getBundleInfo(location);
+            if (locationw != null) {
+                Log.e(TAG, "Failed to find the bundle in BundleInfoList for bundle " + location);
+                insertToReasonList(location, "not found in BundleInfoList!");
+            }
+            if (sInternalBundles == null || sInternalBundles.contains(location)) {
+                checkInstallBundleAndDependency(location);
+                return;
+            }
+        }
+    }
+
     private static long getAvailableInternalMemorySize() {
 
         StatFs statFs = new StatFs(Environment.getDataDirectory().getPath());

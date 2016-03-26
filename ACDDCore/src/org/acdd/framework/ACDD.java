@@ -316,6 +316,14 @@ public class ACDD {
     }
 
     /**
+     * just for use  start uninstall bundle  for  stub mode
+     * @param location
+     */
+    public void checkBundleInstall(String location) {
+        ClassLoadFromBundle.checkBundle(location);
+    }
+
+    /**
      * uninstall specific bundle
      *
      * @param pkgName bundle package name you wanna uninstall
