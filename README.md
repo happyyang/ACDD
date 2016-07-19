@@ -9,6 +9,8 @@
 
 ACDD ,Android Component Dynamic Deployment Framework(Android  Plugin Framework)<br>
 
+# 如果有更好的想法（或者bug fix）可以发起pull-request
+
 The MIT License (MIT) Copyright (c) 2015 Bunny Blue,achellies<br>
 ### [README-中文](README-Zh.md)
 
