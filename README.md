@@ -61,7 +61,7 @@ The MIT License (MIT) Copyright (c) 2015 Bunny Blue,achellies
 
 | Android version        | Status           | 
 | ------------- |:-------------:| 
-| Android N      | not full support(so crash) | 
+| Android 7.0      | tested | 
 | Android 6.0      | tested | 
 | Android 5.0     | tested      |   
 | Android  4.0 | tested     |  
